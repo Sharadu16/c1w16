@@ -23,7 +23,10 @@ console.log(data)
       let stackPrice = document.createElement("p");
       stackPrice.innerText = elem.mrp;
 
-      div.append(discount, img, title, price, stackPrice);
+      let Addbtn = document.createElement("button");
+      Addbtn.innerHTML = "Add to cart"; 
+
+      div.append(discount, img, title, price, stackPrice,Addbtn);
       document.querySelector(".container").append(div);
      
   }
